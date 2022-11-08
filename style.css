@@ -9,12 +9,16 @@ html {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
-a {
+a.project {
   text-decoration: none;
   color: white;
   size: 50spx;
   transition: ease-in-out 0.5s;
 }
+.name {
+  text-decoration: none;
+}
+
 a:hover {
   cursor: pointer;
   color: red;
@@ -64,6 +68,7 @@ p {
   margin-top: 30px;
   transition: 0.3s ease;
   transition-property: background-color, color;
+  text-decoration: none;
 }
 .cta:hover {
   color: white;
@@ -78,7 +83,6 @@ p {
   color: crimson;
 }
 
-/* Header section */
 #header {
   position: fixed;
   z-index: 1000;
@@ -206,11 +210,9 @@ p {
 #header .hamburger.active .bar::after {
   top: 0;
 }
-/* End Header section */
 
-/* Hero Section */
 #hero {
-  background-image: url("./front.png");
+  background-image: url("./photos/front.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -272,9 +274,6 @@ p {
   animation-delay: 2.5s;
 }
 
-/* End Hero Section */
-
-/* Services Section */
 #services .services {
   flex-direction: column;
   text-align: center;
@@ -343,9 +342,7 @@ p {
   color: white;
   text-align: center;
 }
-/* End Services Section */
 
-/* Projects section */
 #projects .projects {
   flex-direction: column;
   max-width: 1200px;
@@ -418,9 +415,7 @@ p {
 #projects .project-item:hover .project-img img {
   transform: scale(1.1);
 }
-/* End Projects section */
 
-/* About Section */
 #about .about {
   flex-direction: column-reverse;
   text-align: center;
@@ -466,9 +461,7 @@ p {
   border: 7px solid crimson;
   z-index: -1;
 }
-/* End About Section */
 
-/* contact Section */
 #contact .contact {
   flex-direction: column;
   max-width: 1200px;
@@ -476,7 +469,6 @@ p {
   width: 90%;
 }
 #contact .contact-items {
-  /* max-width: 400px; */
   width: 100%;
 }
 #contact .contact-item {
@@ -506,14 +498,19 @@ p {
   font-weight: 500;
   margin-bottom: 5px;
 }
-#contact .contact-info h2 {
+#contact .contact-info a {
   font-size: 1.7rem;
   line-height: 2rem;
   font-weight: 500;
 }
-/*End contact Section */
+.phone {
+  /* here */
+  color: black;
+  opacity: 1;
+  visibility: visible;
+  text-decoration: none;
+}
 
-/* Footer */
 #footer {
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
@@ -540,6 +537,7 @@ p {
   width: 50px;
   margin: 0 5px;
 }
+
 #footer .social-item img {
   filter: grayscale(1);
   transition: 0.3s ease filter;
@@ -551,9 +549,7 @@ p {
   color: white;
   font-size: 1.3rem;
 }
-/* End Footer */
 
-/* Keyframes */
 @keyframes hamburger_puls {
   0% {
     opacity: 1;
@@ -585,9 +581,7 @@ p {
     font-weight: 500;
   }
 }
-/* End Keyframes */
 
-/* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
   .cta {
     font-size: 2.5rem;
@@ -597,20 +591,15 @@ p {
     font-size: 6rem;
   }
 
-  /* Hero */
   #hero h1 {
     font-size: 7rem;
   }
-  /* End Hero */
 
-  /* Services Section */
   #services .service-bottom .service-item {
     flex-basis: 45%;
     margin: 2.5%;
   }
-  /* End Services Section */
 
-  /* Project */
   #projects .project-item {
     flex-direction: row;
   }
@@ -629,9 +618,7 @@ p {
   #projects .all-projects .project-img {
     height: 100%;
   }
-  /* End Project */
 
-  /* About */
   #about .about {
     flex-direction: row;
   }
@@ -654,9 +641,7 @@ p {
   #about .col-right h1 {
     text-align: left;
   }
-  /* End About */
 
-  /* contact  */
   #contact .contact {
     flex-direction: column;
     padding: 100px 0;
@@ -688,13 +673,9 @@ p {
     text-align: left;
     padding-left: 20px;
   }
-  /* End contact  */
 }
-/* End Media Query For Tablet */
 
-/* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
-  /* header */
   #header .hamburger {
     display: none;
   }
@@ -714,11 +695,11 @@ p {
   #header .nav-list ul a:after {
     display: none;
   }
-  /* End header */
 
   #services .service-bottom .service-item {
     flex-basis: 22%;
     margin: 1.5%;
   }
 }
-/* End  Media Query For Desktop */
+
+/* kkkkkkkk */
